@@ -1,0 +1,35 @@
+{
+    "name": "hirak/packagist-crawler",
+    "description": "build mirror of packagist.org",
+    "license": "CC0-1.0",
+    "authors": [
+        {
+            "name": "Hiraku NAKANO",
+            "email": "hiraku@tojiru.net"
+        }
+    ],
+    "require": {
+        "spindle/httpclient": "1.*",
+        "guiguiboy/php-cli-progress-bar": "dev-master",
+        "php": ">=5.4",
+        "ext-json": "*",
+        "ext-hash": "*",
+        "ext-curl": "*",
+        "ext-PDO": "*",
+        "ext-zlib": "*",
+        "ext-pdo_sqlite": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "hirak\\PackagistCrawler\\": "src/"
+        }
+    },
+    "bin": [
+        "parallel.php"
+    ],
+    "scripts": {
+        "crawl": "php parallel.php",
+        "test": "php check.php",
+        "compress": "tar cjf packagist.tar.bz2 cache/"
+    }
+}

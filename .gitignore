@@ -1,0 +1,8 @@
+cache/p/*
+cache/index.html
+cache/packages.json
+cache/packages.json.gz
+cache/.expire.db
+cache/.gitignore
+.gitignore
+/.OFFCIALgit
