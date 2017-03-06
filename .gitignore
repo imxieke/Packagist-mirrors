@@ -1,3 +1,4 @@
 cache/p/*
 cache/.gitignore
 .gitignore
+/vendor2
